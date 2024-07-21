@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* css reset code */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset code ends here*/
+
+body {
+  font-family: "lato", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+.container {
+  background: yellow;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.header-section {
+  padding: 20px;
+}
+.header-section > h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.main-section {
+  padding: 20px;
+}
+.input-amount-label {
+  font-size: 18px;
+}
+.input-amount {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+.input-field {
+  margin: 10px;
+}
+.currency-conversion-selection-section {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.currency-conversion-selection-section h2 {
+  font-weight: 520;
+}
+.country-from-selection,
+.country-to-selection {
+  width: 40%;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.country-from-selection {
+  float: left;
+}
+.country-to-selection {
+  float: right;
+}
+.btn-convert {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px auto;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: blue;
+  margin: 10px auto;
+}
+
+.btn-convert:hover {
+  border: solid 2px black;
+  background-color: rgb(21, 21, 249);
+}
+.converted-amount-display-section p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 20px 200px;
+  }
+  .header-section > h1 {
+    font-size: 40px;
+  }
+}
